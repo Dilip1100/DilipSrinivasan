@@ -34,7 +34,21 @@
         <section id="main" class="wrapper">
             <div class="inner">
                 <h1 class="major">CaseStudy Power BI</h1>
-                <iframe src="images/Flight Insights.pdf" width="600" height="400"></iframe>
+                const phantom = require('phantom');
+
+(async function() {
+  const instance = await phantom.create();
+  const page = await instance.createPage();
+  await page.on('onResourceRequested', function(requestData) {
+    console.info('Requesting', requestData.url);
+  });
+
+  const status = await page.open('https://https://github.com/Dilip1100/DilipSrinivasan/edit/main/Projects.html');
+  const content = await page.property('DilipSrinivasan/Flight Insights.pdf');
+  console.log(content);
+
+  await instance.exit();
+})();
   <p>Change your browser to View Properly or enable plug-in</p>
 </object>
 
