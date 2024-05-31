@@ -1,49 +1,314 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+    Hyperspace by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <title>My Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+
+    <!-- Header -->
+    <header id="header">
+        <a href="index.html" class="title">WorkExperience</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="generic.html" class="active">Generic</a></li>
+                <li><a href="elements.html">Elements</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Main -->
+        <!-- Main -->
+        <section id="main" class="wrapper">
+            <div class="inner">
+                <h1 class="major">CaseStudy EDA</h1>
+           <iframe src="https://www.slideshare.net/slideshow/embed_code/key/L3Sz38HP3AdqT2?hostedIn=slideshare&page=upload" width="820" height="810" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+
+                <p>
+                 EDA based on Historial Public Data Set 
+                </p>
+            </div>
+        </section>
+    </section>
+        <section id="main" class="wrapper">
+            <div class="inner">
+                <h1 class="major">CaseStudy Tableau</h1>
+                <span class="image fit"><img src="images/pic11.jpg" alt="" /></span>
+
+                <p>
+                    A Health Company data also which is at any given point of time, has around 4000 employees. However, every year, around 15% of its employees leave the company and need to be replaced with the talent pool available in the job market.
+                    The management believes that this level of attrition (employees leaving, either on their own or because they got fired) is bad for the company, because of the following reasons -
+                    The former employees’ projects get delayed, which makes it difficult to meet timelines, resulting in a reputation loss among consumers and partners
+                    A sizeable department has to be maintained, for the purposes of recruiting new talent
+                    More often than not, the new employees have to be trained for the job and/or given time to fit themselves to the company
+                    Hence, the management wants to understand what factors they should focus on, in order to curb attrition and how the employement numbers will impact them in 2020.
+                    In other words, they want to know what changes they should make to their workplace, in order to get most of their employees to stay. Also, they want to know which of these variables is most important and needs to be addressed right away.
+
+
+                    <h3>TABLEAU FINDINGS</h3>
+
+                    • HR Department had the lowest salary Hike <br />
+                    • Job Satisfaction for employees above LVL3 is low <br />
+                    • Performance to Income ratio was uneven <br />
+                    • Experience to Income ratio was unevenly distributed <br />
+                </p>
+            </div>
+        </section>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tableau Dashboards</title>
+  <title>Case Study Tableau</title>
   <style>
-    #dashboard1, #dashboard2 {
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
       width: 100%;
-      height: 500px; /* Adjust the height as needed */
-      max-width: 100%;
-      margin: 0 auto;
-      display: block;
+      overflow: hidden;
+    }
+    #main.wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+    }
+    .inner {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .tableauPlaceholder {
+      width: 100%;
+      height: 100%;
+    }
+    .tableauViz {
+      width: 100%;
+      height: 100%;
     }
   </style>
 </head>
 <body>
-  <div id="dashboard1"></div>
-  <div id="dashboard2"></div>
-
-  <script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+  <section id="main" class="wrapper">
+    <div class="inner">
+      <h1 class="major">Case Study Tableau</h1>
+      <p>
+        Tableau case study where I analysed the numerous KPIs associated with International Football Players such as their Potential, Strong Foot, Average Age, Pay out, etc. Please find the analysis result below.
+      </p>
+      <h3>TABLEAU FINDINGS</h3>
+      <div class="tableauPlaceholder" id="viz1669692093488">
+        <noscript>
+          <a href="#">
+            <img alt=" " src="https://public.tableau.com/static/images/In/InterviewAssignment_16696891835150/DASHBOARD/1_rss.png" style="border: none" />
+          </a>
+        </noscript>
+        <object class="tableauViz" style="display:none;">
+          <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
+          <param name="embed_code_version" value="3" />
+          <param name="site_root" value="" />
+          <param name="name" value="InterviewAssignment_16696891835150/DASHBOARD" />
+          <param name="tabs" value="yes" />
+          <param name="toolbar" value="yes" />
+          <param name="static_image" value="https://public.tableau.com/static/images/In/InterviewAssignment_16696891835150/DASHBOARD/1.png" />
+          <param name="animate_transition" value="yes" />
+          <param name="display_static_image" value="yes" />
+          <param name="display_spinner" value="yes" />
+          <param name="display_overlay" value="yes" />
+          <param name="display_count" value="yes" />
+          <param name="language" value="en-US" />
+        </object>
+      </div>
+    </div>
+  </section>
   <script type="text/javascript">
-    const dashboard1Element = document.getElementById('dashboard1');
-    const dashboard2Element = document.getElementById('dashboard2');
-
-    const tableauVizOptions1 = {
-      url: "URL_TO_YOUR_FIRST_DASHBOARD",
-      height: "500px", // Adjust height if needed
-      width: "100%",
-      // Other Tableau embed parameters...
-    };
-
-    const tableauVizOptions2 = {
-      url: "URL_TO_YOUR_SECOND_DASHBOARD",
-      height: "500px", // Adjust height if needed
-      width: "100%",
-      // Other Tableau embed parameters...
-    };
-
-    const initTableauDashboard = (element, options) => {
-      const viz = new tableau.Viz(element, options);
-      // Handle additional functionalities if needed (optional)
-    };
-
-    initTableauDashboard(dashboard1Element, tableauVizOptions1);
-    initTableauDashboard(dashboard2Element, tableauVizOptions2);
+    var divElement = document.getElementById('viz1669692093488');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    function resizeViz() {
+      if (divElement.offsetWidth > 800) {
+        vizElement.style.minWidth = '1620px';
+        vizElement.style.maxWidth = '100%';
+        vizElement.style.minHeight = '1610px';
+        vizElement.style.maxHeight = (divElement.offsetWidth * 0.75) + 'px';
+      } else if (divElement.offsetWidth > 500) {
+        vizElement.style.minWidth = '1620px';
+        vizElement.style.maxWidth = '100%';
+        vizElement.style.minHeight = '610px';
+        vizElement.style.maxHeight = (divElement.offsetWidth * 0.75) + 'px';
+      } else {
+        vizElement.style.width = '100%';
+        vizElement.style.minHeight = '1250px';
+        vizElement.style.maxHeight = (divElement.offsetWidth * 1.77) + 'px';
+      }
+    }
+    window.addEventListener('resize', resizeViz);
+    resizeViz();
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
   </script>
+</body>
+</html>
+
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case Study Tableau</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+    }
+    #main.wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+    }
+    .inner {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .tableauPlaceholder {
+      width: 100%;
+      height: 100%;
+    }
+    .tableauViz {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <section id="main" class="wrapper">
+    <div class="inner">
+      <h1 class="major">Case Study Tableau</h1>
+      <p>
+        Cyclistic, a bike-share company in Chicago. For maximizing the number of annual memberships, the team wants to understand how casual riders and annual members use Cyclistic bikes Differ. This was carried out using public data set and results yielded help make strategic business decisions using Quarterly generated data files. Visualization of the Findings was created To answer the question “In what ways do members and casual riders use Divvy bikes differently?”
+      </p>
+      <h3>TABLEAU FINDINGS</h3>
+      <div class="tableauPlaceholder" id="viz1678689180987">
+        <noscript>
+          <a href="#">
+            <img alt="Dashboard" src="https://public.tableau.com/static/images/Go/GoogleCapstone_16786891147770/Dashboard/1_rss.png" style="border: none" />
+          </a>
+        </noscript>
+        <object class="tableauViz" style="display:none;">
+          <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
+          <param name="embed_code_version" value="3" />
+          <param name="site_root" value="" />
+          <param name="name" value="GoogleCapstone_16786891147770/Dashboard" />
+          <param name="tabs" value="no" />
+          <param name="toolbar" value="yes" />
+          <param name="static_image" value="https://public.tableau.com/static/images/Go/GoogleCapstone_16786891147770/Dashboard/1.png" />
+          <param name="animate_transition" value="yes" />
+          <param name="display_static_image" value="yes" />
+          <param name="display_spinner" value="yes" />
+          <param name="display_overlay" value="yes" />
+          <param name="display_count" value="yes" />
+          <param name="language" value="en-US" />
+          <param name="filter" value="publish=yes" />
+        </object>
+      </div>
+    </div>
+  </section>
+  <script type="text/javascript">
+    var divElement = document.getElementById('viz1678689180987');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    function resizeViz() {
+      if (divElement.offsetWidth > 800) {
+        vizElement.style.minWidth = '1620px';
+        vizElement.style.maxWidth = '100%';
+        vizElement.style.minHeight = '1610px';
+        vizElement.style.maxHeight = (divElement.offsetWidth * 0.75) + 'px';
+      } else if (divElement.offsetWidth > 500) {
+        vizElement.style.minWidth = '1620px';
+        vizElement.style.maxWidth = '100%';
+        vizElement.style.minHeight = '610px';
+        vizElement.style.maxHeight = (divElement.offsetWidth * 0.75) + 'px';
+      } else {
+        vizElement.style.width = '100%';
+        vizElement.style.minHeight = '1250px';
+        vizElement.style.maxHeight = (divElement.offsetWidth * 1.77) + 'px';
+      }
+    }
+    window.addEventListener('resize', resizeViz);
+    resizeViz();
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
+</body>
+</html>
+
+<section id="main" class="wrapper">
+            <div class="inner">
+                <h1 class="major">CaseStudy Profit Prediction</h1>
+
+                <p>
+                    A Linear Regression Model used to forecast the Profit of an Retailer utilizing the data consisting of historical sales ranging from 2014 to 2017 and make predictions until 2020 
+                    Here, features Profit and Year were used to train the Model and the following was the outcome
+                    <h3>Profit Forecasting</h3>
+                    <span class="image fit"><img src="images/pic14.png" alt="" /></span>
+                    <span class="image fit"><img src="images/pic15.png" alt="" /></span>
+            </div>
+        </section>
+    </div>
+ <section id="main" class="wrapper">
+            <div class="inner">
+                <h1 class="major">CaseStudy Insurance Claim Prediction</h1>
+
+                <p>
+                    A Random Forest Regressor Model used to make Claim Predictions using data ranging from 1990 till 2015 
+                    Training data shape: (800, 7)
+                    Mean Squared Error: 247824244.66375
+                    R-squared: 0.6276132188623238
+                    <h3>Profit Forecasting</h3>
+                    <span class="image fit"><img src="images/pic16.png" alt="" /></span>
+            </div>
+        </section>
+    </div>
+    <!-- Footer -->
+    <footer id="footer" class="wrapper alt">
+        <div class="inner">
+            <ul class="menu">
+                <li>&copy; Untitled. All rights reserved.</li>
+                <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
 </body>
 </html>
