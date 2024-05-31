@@ -1,3 +1,6 @@
+Here's the consolidated code:
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +11,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: #f4f4f4; /* Matched color scheme */
             margin: 0;
             padding: 0;
         }
@@ -19,7 +22,7 @@
             background: white;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        h1.major {
+        h2.major {
             font-size: 2em;
             margin-bottom: 20px;
             color: #333;
@@ -42,51 +45,60 @@
         }
     </style>
 </head>
-<body>
+<body style="background-color: #f4f4f4;"> <!-- Matched color scheme -->
     <div class="wrapper">
-        <h1 class="major">CaseStudy Tableau</h1>
-        <p>Tableau case study where I analysed the numerous KPIs associated with International Football Players such as their Potential, Strong Foot, Average Age, Pay out, etc. Please find the analysis result below.</p>
-        <h3>TABLEAU FINDINGS</h3>
-        <div class="tableauPlaceholder" id="viz1669692093488">
-            <noscript><a href='#'><img alt=' ' src='https://public.tableau.com/static/images/In/InterviewAssignment_16696891835150/DASHBOARD/1_rss.png' style='border: none' /></a></noscript>
-            <object class='tableauViz'>
-                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
-                <param name='embed_code_version' value='3' /> 
-                <param name='site_root' value='' />
-                <param name='name' value='InterviewAssignment_16696891835150/DASHBOARD' />
-                <param name='tabs' value='yes' />
-                <param name='toolbar' value='yes' />
-                <param name='static_image' value='https://public.tableau.com/static/images/In/InterviewAssignment_16696891835150/DASHBOARD/1.png' />
-                <param name='animate_transition' value='yes' />
-                <param name='display_static_image' value='yes' />
-                <param name='display_spinner' value='yes' />
-                <param name='display_overlay' value='yes' />
-                <param name='display_count' value='yes' />
-                <param name='language' value='en-US' />
-            </object>
-        </div>
-        <h1 class="major">CaseStudy TABLEAU</h1>
-        <p>Cyclistic, a bike-share company in Chicago, wants to maximize the number of annual memberships by understanding how casual riders and annual members use Cyclistic bikes differently. This analysis was carried out using a public data set, and the results help make strategic business decisions using quarterly generated data files. Visualization of the findings was created to answer the question “In what ways do members and casual riders use Divvy bikes differently?”</p>
-        <h3>TABLEAU FINDINGS</h3>
-        <div class="tableauPlaceholder" id="viz1678689180987">
-            <noscript><a href='#'><img alt='Dashboard' src='https://public.tableau.com/static/images/Go/GoogleCapstone_16786891147770/Dashboard/1_rss.png' style='border: none' /></a></noscript>
-            <object class='tableauViz'>
-                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
-                <param name='embed_code_version' value='3' /> 
-                <param name='site_root' value='' />
-                <param name='name' value='GoogleCapstone_16786891147770/Dashboard' />
-                <param name='tabs' value='no' />
-                <param name='toolbar' value='yes' />
-                <param name='static_image' value='https://public.tableau.com/static/images/Go/GoogleCapstone_16786891147770/Dashboard/1.png' />
-                <param name='animate_transition' value='yes' />
-                <param name='display_static_image' value='yes' />
-                <param name='display_spinner' value='yes' />
-                <param name='display_overlay' value='yes' />
-                <param name='display_count' value='yes' />
-                <param name='language' value='en-US' />
-                <param name='filter' value='publish=yes' />
-            </object>
-        </div>
+        <section id="main" class="wrapper">
+            <div class="inner">
+                <h2 class="major">CaseStudy Tableau</h2>
+                <p>Tableau case study where I analyzed the numerous KPIs associated with International Football Players such as their Potential, Strong Foot, Average Age, Pay out, etc. Please find the analysis result below.</p>
+                <h3>TABLEAU FINDINGS</h3>
+                <div class="tableauPlaceholder" id="viz1669692093488">
+                    <noscript><a href='#'><img alt=' ' src='https://public.tableau.com/static/images/In/InterviewAssignment_16696891835150/DASHBOARD/1_rss.png' style='border: none' /></a></noscript>
+                    <object class='tableauViz'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                        <param name='embed_code_version' value='3' /> 
+                        <param name='site_root' value='' />
+                        <param name='name' value='InterviewAssignment_16696891835150/DASHBOARD' />
+                        <param name='tabs' value='yes' />
+                        <param name='toolbar' value='yes' />
+                        <param name='static_image' value='https://public.tableau.com/static/images/In/InterviewAssignment_16696891835150/DASHBOARD/1.png' />
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                        <param name='language' value='en-US' />
+                    </object>
+                </div>
+            </div>
+        </section>
+        
+        <section id="main" class="wrapper">
+            <div class="inner">
+                <h2 class="major">CaseStudy TABLEAU</h2>
+                <p>Cyclistic, a bike-share company in Chicago, wants to maximize the number of annual memberships by understanding how casual riders and annual members use Cyclistic bikes differently. This analysis was carried out using a public data set, and the results help make strategic business decisions using quarterly generated data files. Visualization of the findings was created to answer the question “In what ways do members and casual riders use Divvy bikes differently?”</p>
+                <h3>TABLEAU FINDINGS</h3>
+                <div class="tableauPlaceholder" id="viz1678689180987">
+                    <noscript><a href='#'><img alt='Dashboard' src='https://public.tableau.com/static/images/Go/GoogleCapstone_16786891147770/Dashboard/1_rss.png' style='border: none' /></a></noscript>
+                    <object class='tableauViz'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                        <param name='embed_code_version' value='3' /> 
+                        <param name='site_root' value='' />
+                        <param name='name' value='GoogleCapstone_16786891147770/Dashboard' />
+                        <param name='tabs' value='no' />
+                        <param name='toolbar' value='yes' />
+                        <param name='static_image' value='https://public.tableau.com/static/images/Go/GoogleCapstone_16786891147770/Dashboard/1.png' />
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                        <param name='language' value='en-US' />
+                        <param name='filter' value='publish=yes' />
+                    </object>
+                </div>
+            </div>
+        </section>
     </div>
     <script type='text/javascript'>
         var divElement1 = document.getElementById('viz1669692093488');
@@ -99,37 +111,29 @@
         } else if (divElement1.offsetWidth > 500) {
             vizElement1.style.minWidth = '1620px';
             vizElement1.style.maxWidth = '100%';
-            vizElement1.style.minHeight = '610px';
-            vizElement1.style.maxHeight = (divElement1.offsetWidth * 0.75) + 'px';
-        } else {
-            vizElement1.style.width = '100%';
-            vizElement1.style.minHeight = '1250px';
-            vizElement1.style.maxHeight = (divElement1.offsetWidth * 1.77) + 'px';
-        }
-        var scriptElement1 = document.createElement('script');
-        scriptElement1.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-        vizElement1.parentNode.insertBefore(scriptElement1, vizElement1);
+            vizElement1.style.minHeight= '1610px';
+vizElement1.style.maxHeight = (divElement1.offsetWidth * 0.75) + 'px';
+} else {
+vizElement1.style.width = '100%';
+vizElement1.style.height = (divElement1.offsetWidth * 1.77) + 'px';
+}
+var divElement2 = document.getElementById('viz1678689180987');
+var vizElement2 = divElement2.getElementsByTagName('object')[0];
+if (divElement2.offsetWidth > 800) {
+vizElement2.style.minWidth = '1620px';
+vizElement2.style.maxWidth = '100%';
+vizElement2.style.minHeight = '1610px';
+vizElement2.style.maxHeight = (divElement2.offsetWidth * 0.75) + 'px';
+} else if (divElement2.offsetWidth > 500) {
+vizElement2.style.minWidth = '1620px';
+vizElement2.style.maxWidth = '100%';
+vizElement2.style.minHeight = '1610px';
+vizElement2.style.maxHeight = (divElement2.offsetWidth * 0.75) + 'px';
+} else {
+vizElement2.style.width = '100%';
+vizElement2.style.height = (divElement2.offsetWidth * 1.77) + 'px';
+}
+</script>
 
-        var divElement2 = document.getElementById('viz1678689180987');
-        var vizElement2 = divElement2.getElementsByTagName('object')[0];
-        if (divElement2.offsetWidth > 800) {
-            vizElement2.style.minWidth = '1620px';
-            vizElement2.style.maxWidth = '100%';
-            vizElement2.style.minHeight = '1610px';
-            vizElement2.style.maxHeight = (divElement2.offsetWidth * 0.75) + 'px';
-        } else if (divElement2.offsetWidth > 500) {
-            vizElement2.style.minWidth = '1620px';
-            vizElement2.style.maxWidth = '100%';
-            vizElement2.style.minHeight = '610px';
-            vizElement2.style.maxHeight = (divElement2.offsetWidth * 0.75) + 'px';
-        } else {
-            vizElement2.style.width = '100%';
-            vizElement2.style.minHeight = '1250px';
-            vizElement2.style.maxHeight = (divElement2.offsetWidth * 1.77) + 'px';
-        }
-        var scriptElement2 = document.createElement('script');
-        scriptElement2.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-        vizElement2.parentNode.insertBefore(scriptElement2, vizElement2);
-    </script>
 </body>
 </html>
