@@ -3,13 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tableau Dashboards</title>
+    <title>My Tableau Dashboards</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .wrapper {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1.major {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        h3 {
+            margin-top: 20px;
+            color: #555;
+        }
         .tableauPlaceholder {
             width: 100%;
             height: 0;
             padding-bottom: 75%;
             position: relative;
+            margin-bottom: 30px;
         }
         .tableauViz {
             position: absolute;
@@ -19,16 +43,11 @@
     </style>
 </head>
 <body>
-
-<section id="main" class="wrapper">
-    <div class="inner">
+    <div class="wrapper">
         <h1 class="major">CaseStudy Tableau</h1>
-        <p>
-            Tableau case study where I analysed the numerous KPIs associated with International Football Players such as their Potential, Strong Foot, Average Age, Pay out, etc. 
-            Please find the analysis result below.
-        </p>
+        <p>Tableau case study where I analysed the numerous KPIs associated with International Football Players such as their Potential, Strong Foot, Average Age, Pay out, etc. Please find the analysis result below.</p>
         <h3>TABLEAU FINDINGS</h3>
-        <div class='tableauPlaceholder' id='viz1669692093488'>
+        <div class="tableauPlaceholder" id="viz1669692093488">
             <noscript><a href='#'><img alt=' ' src='https://public.tableau.com/static/images/In/InterviewAssignment_16696891835150/DASHBOARD/1_rss.png' style='border: none' /></a></noscript>
             <object class='tableauViz'>
                 <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
@@ -46,17 +65,10 @@
                 <param name='language' value='en-US' />
             </object>
         </div>
-    </div>
-</section>
-
-<section id="main" class="wrapper">
-    <div class="inner">
         <h1 class="major">CaseStudy TABLEAU</h1>
-        <p>
-            Cyclistic, a bike-share company in Chicago, wants to maximize the number of annual memberships by understanding how casual riders and annual members use Cyclistic bikes differently. This analysis was carried out using a public data set, and the results help make strategic business decisions using quarterly generated data files. Visualization of the findings was created to answer the question “In what ways do members and casual riders use Divvy bikes differently?”
-        </p>
+        <p>Cyclistic, a bike-share company in Chicago, wants to maximize the number of annual memberships by understanding how casual riders and annual members use Cyclistic bikes differently. This analysis was carried out using a public data set, and the results help make strategic business decisions using quarterly generated data files. Visualization of the findings was created to answer the question “In what ways do members and casual riders use Divvy bikes differently?”</p>
         <h3>TABLEAU FINDINGS</h3>
-        <div class='tableauPlaceholder' id='viz1678689180987'>
+        <div class="tableauPlaceholder" id="viz1678689180987">
             <noscript><a href='#'><img alt='Dashboard' src='https://public.tableau.com/static/images/Go/GoogleCapstone_16786891147770/Dashboard/1_rss.png' style='border: none' /></a></noscript>
             <object class='tableauViz'>
                 <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
@@ -76,23 +88,48 @@
             </object>
         </div>
     </div>
-</section>
+    <script type='text/javascript'>
+        var divElement1 = document.getElementById('viz1669692093488');
+        var vizElement1 = divElement1.getElementsByTagName('object')[0];
+        if (divElement1.offsetWidth > 800) {
+            vizElement1.style.minWidth = '1620px';
+            vizElement1.style.maxWidth = '100%';
+            vizElement1.style.minHeight = '1610px';
+            vizElement1.style.maxHeight = (divElement1.offsetWidth * 0.75) + 'px';
+        } else if (divElement1.offsetWidth > 500) {
+            vizElement1.style.minWidth = '1620px';
+            vizElement1.style.maxWidth = '100%';
+            vizElement1.style.minHeight = '610px';
+            vizElement1.style.maxHeight = (divElement1.offsetWidth * 0.75) + 'px';
+        } else {
+            vizElement1.style.width = '100%';
+            vizElement1.style.minHeight = '1250px';
+            vizElement1.style.maxHeight = (divElement1.offsetWidth * 1.77) + 'px';
+        }
+        var scriptElement1 = document.createElement('script');
+        scriptElement1.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement1.parentNode.insertBefore(scriptElement1, vizElement1);
 
-<script type='text/javascript'>
-    document.addEventListener('DOMContentLoaded', function() {
-        var tableauScript = document.createElement('script');
-        tableauScript.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-        tableauScript.onload = function() {
-            var placeholders = document.getElementsByClassName('tableauPlaceholder');
-            for (var i = 0; i < placeholders.length; i++) {
-                var vizElement = placeholders[i].getElementsByTagName('object')[0];
-                vizElement.style.display = 'block';
-                new tableau.Viz(vizElement.parentElement, vizElement);
-            }
-        };
-        document.body.appendChild(tableauScript);
-    });
-</script>
-
+        var divElement2 = document.getElementById('viz1678689180987');
+        var vizElement2 = divElement2.getElementsByTagName('object')[0];
+        if (divElement2.offsetWidth > 800) {
+            vizElement2.style.minWidth = '1620px';
+            vizElement2.style.maxWidth = '100%';
+            vizElement2.style.minHeight = '1610px';
+            vizElement2.style.maxHeight = (divElement2.offsetWidth * 0.75) + 'px';
+        } else if (divElement2.offsetWidth > 500) {
+            vizElement2.style.minWidth = '1620px';
+            vizElement2.style.maxWidth = '100%';
+            vizElement2.style.minHeight = '610px';
+            vizElement2.style.maxHeight = (divElement2.offsetWidth * 0.75) + 'px';
+        } else {
+            vizElement2.style.width = '100%';
+            vizElement2.style.minHeight = '1250px';
+            vizElement2.style.maxHeight = (divElement2.offsetWidth * 1.77) + 'px';
+        }
+        var scriptElement2 = document.createElement('script');
+        scriptElement2.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement2.parentNode.insertBefore(scriptElement2, vizElement2);
+    </script>
 </body>
 </html>
