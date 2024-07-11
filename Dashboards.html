@@ -28,7 +28,7 @@
                 <noscript>
                     <a href="#"><img alt=" " src="https://public.tableau.com/static/images/In/InterviewAssignment_16696891835150/DASHBOARD/1_rss.png" style="border: none;"></a>
                 </noscript>
-                <object class="tableauViz">
+                <object class="tableauViz" style="width: 100%; height: auto;">
                     <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F">
                     <param name="embed_code_version" value="3">
                     <param name="site_root" value="">
@@ -59,7 +59,7 @@
                 <noscript>
                     <a href="#"><img alt="Dashboard" src="https://public.tableau.com/static/images/Go/GoogleCapstone_16786891147770/Dashboard/1_rss.png" style="border: none;"></a>
                 </noscript>
-                <object class="tableauViz">
+                <object class="tableauViz" style="width: 100%; height: auto;">
                     <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F">
                     <param name="embed_code_version" value="3">
                     <param name="site_root" value="">
@@ -80,31 +80,26 @@
     </div>
 
     <script type="text/javascript">
-        function setupTableauViz(divId, minWidth, minHeight, maxHeightRatio) {
+        function setupTableauViz(divId) {
             var divElement = document.getElementById(divId);
             var vizElement = divElement.getElementsByTagName('object')[0];
-            if (divElement.offsetWidth > 800) {
-                vizElement.style.minWidth = minWidth + 'px';
-                vizElement.style.maxWidth = '100%';
-                vizElement.style.minHeight = minHeight + 'px';
-                vizElement.style.maxHeight = (divElement.offsetWidth * maxHeightRatio) + 'px';
-            } else if (divElement.offsetWidth > 500) {
-                vizElement.style.minWidth = minWidth + 'px';
-                vizElement.style.maxWidth = '100%';
-                vizElement.style.minHeight = '610px';
-                vizElement.style.maxHeight = (divElement.offsetWidth * maxHeightRatio) + 'px';
-            } else {
-                vizElement.style.width = '100%';
-                vizElement.style.minHeight = '1250px';
-                vizElement.style.maxHeight = (divElement.offsetWidth * 1.77) + 'px';
-            }
+            vizElement.style.width = '100%';
+            vizElement.style.height = divElement.offsetWidth * 0.75 + 'px';
+
             var scriptElement = document.createElement('script');
             scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
             vizElement.parentNode.insertBefore(scriptElement, vizElement);
         }
 
-        setupTableauViz('viz1669692093488', 1620, 1610, 0.75);
-        setupTableauViz('viz1678689180987', 1620, 1610, 0.75);
+        window.onload = function() {
+            setupTableauViz('viz1669692093488');
+            setupTableauViz('viz1678689180987');
+        };
+
+        window.onresize = function() {
+            setupTableauViz('viz1669692093488');
+            setupTableauViz('viz1678689180987');
+        };
     </script>
 
     <!-- Footer -->
