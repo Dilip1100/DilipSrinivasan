@@ -11,6 +11,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <script>
+  const sessionStart = Date.now();
+
+  // Log time spent on the page
+  window.addEventListener("beforeunload", () => {
+    const payload = {
+      page: window.location.pathname,
+      time_spent_sec: Math.round((Date.now() - sessionStart) / 1000),
+      timestamp: new Date().toISOString(),
+      referrer: document.referrer
+    };
+    navigator.sendBeacon("https://your-api.example.com/track", JSON.stringify(payload));
+  });
+
+  // Track page-to-page navigation
+  document.querySelectorAll("a[href^='/'], a[href^='https://dilip1100.github.io']").forEach(link => {
+    link.addEventListener("click", () => {
+      fetch("https://your-api.example.com/navigation", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          from: window.location.pathname,
+          to: link.getAttribute("href"),
+          timestamp: new Date().toISOString()
+        }),
+        keepalive: true
+      });
+    });
+  });
+</script>
 </head>
 <body class="is-preload">
 
