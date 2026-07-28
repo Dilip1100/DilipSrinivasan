@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dilip1100.github.io/DilipSrinivasan/sitemap.xml

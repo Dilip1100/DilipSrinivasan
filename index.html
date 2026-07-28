@@ -1,427 +1,206 @@
-<!DOCTYPE HTML>
-<!--
-    Hyperspace by HTML5 UP
-    html5up.net | @ajlkn
-    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <title>Dilip's Portfolio</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-    <script>
-  const sessionStart = Date.now();
-
-  // Log time spent on the page
-  window.addEventListener("beforeunload", () => {
-    const payload = {
-      page: window.location.pathname,
-      time_spent_sec: Math.round((Date.now() - sessionStart) / 1000),
-      timestamp: new Date().toISOString(),
-      referrer: document.referrer
-    };
-    navigator.sendBeacon("https://your-api.example.com/track", JSON.stringify(payload));
-  });
-
-  // Track page-to-page navigation
-  document.querySelectorAll("a[href^='/'], a[href^='https://dilip1100.github.io']").forEach(link => {
-    link.addEventListener("click", () => {
-      fetch("https://your-api.example.com/navigation", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          from: window.location.pathname,
-          to: link.getAttribute("href"),
-          timestamp: new Date().toISOString()
-        }),
-        keepalive: true
-      });
-    });
-  });
-</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dilip Kumar | Data Business Analyst & Product Manager</title>
+  <meta name="description" content="Portfolio of Dilip Kumar, a data business analyst and product manager specializing in enterprise analytics, financial crimes technology, capital markets, BI and cloud data platforms.">
+  <meta name="theme-color" content="#5e42a6">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Dilip Kumar | Data Business Analyst & Product Manager">
+  <meta property="og:description" content="Enterprise analytics, product management, financial crimes technology and data platform delivery.">
+  <meta property="og:image" content="https://dilip1100.github.io/DilipSrinivasan/images/og.png">
+  <meta property="og:url" content="https://dilip1100.github.io/DilipSrinivasan/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://dilip1100.github.io/DilipSrinivasan/">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/enterprise.css">
 </head>
-<body class="is-preload">
+<body class="enterprise">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html" aria-label="Dilip Kumar home">
+        <span class="brand-mark" aria-hidden="true">DK</span>
+        <span>Dilip Kumar</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="Open navigation">☰</button>
+      <nav class="site-nav" id="site-navigation" aria-label="Primary navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="experience.html">Experience</a>
+        <a href="Projects.html">Projects</a>
+        <a href="Dashboards.html">Dashboards</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Sidebar -->
-    <section id="sidebar">
-        <div class="inner">
-            <nav>
-                <ul>
-                    <li><a href="#intro">Welcome</a></li>
-                    <li><a href="#one">My Skillsets</a></li>
-                    <li><a href="#two">Projects Worked </a></li>
-                    <li><a href="#three">Get in touch</a></li>
-                </ul>
-            </nav>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Data · Product · Enterprise Transformation</p>
+          <h1 id="hero-title">Dilip Kumar</h1>
+          <p class="role">Data Business Analyst & Product Manager</p>
+          <p class="lede">I translate complex business problems into scalable data products, trusted reporting and actionable decisions across financial services, telecom, healthcare and life sciences.</p>
+          <div class="hero-actions">
+            <a class="button enterprise-button primary" href="Projects.html">Explore my work</a>
+            <a class="button enterprise-button" href="documents/Dilip-Kumar-Resume.pdf" download>Download résumé</a>
+            <a class="button enterprise-button" href="mailto:dilip1100@gmail.com">Contact me</a>
+          </div>
         </div>
+        <div class="portrait-wrap">
+          <img class="portrait" src="images/dilip-kumar.webp" width="1000" height="1000" alt="Professional portrait of Dilip Kumar">
+          <span class="availability">Chennai, India</span>
+        </div>
+      </div>
     </section>
 
-    <!-- Wrapper -->
-    <div id="wrapper">
-        
+    <section class="trust-bar" aria-label="Professional highlights">
+      <div class="container trust-grid">
+        <div class="trust-item"><strong class="trust-value">7+ years</strong><span class="trust-label">Analytics & product delivery</span></div>
+        <div class="trust-item"><strong class="trust-value">6 domains</strong><span class="trust-label">Cross-industry experience</span></div>
+        <div class="trust-item"><strong class="trust-value">SQL + Python</strong><span class="trust-label">Analysis & automation</span></div>
+        <div class="trust-item"><strong class="trust-value">BI + Cloud</strong><span class="trust-label">Enterprise data platforms</span></div>
+      </div>
+    </section>
 
-        <!-- Intro -->
-        <section id="intro" class="wrapper style1 fullscreen fade-up">
-            <div class="inner">
-                <h1>Dilip Kumar S</h1>
-                <h2>About Me</h2>
-                <p>
-                    Analytical and detail-driven developer with a strong focus on business intelligence, data visualization, and cross-platform dashboard solutions. Proficient in building intuitive, performance-optimized dashboards using 
-                    Python frameworks such as PyQt5, Plotly Dashand host VIA Streamlit, Render, Netlify. 
-                    Skilled in developing smart applications for sectors including automotive, education, finance, induatrial Experienced with data engineering for cloud-hosted platforms like Snowflake and AWS<br />
-                </p>
-                <ul class="actions">
-                    <li><a href="https://www.credly.com/users/dilip-kumar-s.f819e009/badges" class="button scrolly">Skill Badges</a></li>
-                </ul>
-                <ul class="actions">
-                    <li><a href="https://credentials.getdbt.com/profile/dilips1100/wallet" class="button scrolly">Acc Skill Badges</a></li>
-                </ul>
-<ul class="actions">
-                    <li><a href="https://github.com/Dilip1100?tab=repositories" class="button scrolly">Sample Work</a></li>
-                </ul>
-                <ul class="actions">
-                    <li><a href="https://dilip1100.github.io/DilipSrinivasan/Dashboards.html" class="button scrolly">Tableau Dashboards</a></li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- One -->
-        <section id="one" class="wrapper style2 spotlights">
-             <section>
-                <a href="#" class="image"><img src="images/pic12.jpg" alt="" data-position="center center" /></a>
-                <div class="content">
-                    <div class="inner">
-                        <h2>Azure Data Concepts</h2>
-                        <p>
-                            Gained working knowledge around core Azure Data Concepts including IaaS, PaaS, SaaS. Deploying cloud data solutions such as 
-                            Azure Cosmos DB, Azure SQL Server and various other Relational, Non Relational and Graph Databases(Gremlin)
-                            Gained knowledge around Document Databases (JSON). Touched upon topics including Azure Synapse Analytics,
-                            Azure Data Bricks, Data Factory and Azure Data Lake. 
-                        </p>
-                        <ul class="actions">
-                            <li><a href="Projects.html" class="button">Learn more</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-             <section>
-                <a href="#" class="image"><img src="images/pic13.png" alt="" data-position="center center" /></a>
-                <div class="content">
-                    <div class="inner">
-                        <h2>Google Certified Data Analyst </h2>
-                        <p>
-                            Completed a Sequence of 8 Courses consisting of Stages of Data Analysis, Data Sourcing,
-                            Data Cleansing, Data Transformation, Data Analysis and Finally Visualization 
-                            Differentiated between a capstone, Case Study, and a Portfolio
-                            Identified the key features and attributes of a completed case study
-                            Applied the practices and procedures associated with the data analysis process to a given set of data
-                            Discussed the use of case studies/portfolios when communicating with recruiters and potential employers
-
-                        </p>
-                        <ul class="actions">
-                            <li><a href="Projects.html" class="button">Learn more</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
-                <div class="content">
-                    <div class="inner">
-                        <h2>Customer Analytics</h2>
-                        <p>
-                            Describe the major methods of customer data collection used by companies and understand how this data can inform business decisions
-                            Describe the main tools used to predict customer behavior and identify the appropriate uses for each tool
-                            Communicate key ideas about customer analytics and how the field informs business decisions
-                            Communicate the history of customer analytics and latest best practices at top firms
-                        </p>
-                        <ul class="actions">
-                            <li><a href="Projects.html" class="button">Learn more</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
-                <div class="content">
-                    <div class="inner">
-                        <h2>Business Strategy</h2>
-                        <p>
-                            Demonstrated my ability to think strategically, analyze the competitive environment,
-                            and recommend firm positioning and value creation. Through this course developed at the Darden School of Business at the University of Virginia,
-                            I did explore the underlying theory and frameworks that provide the foundations of a successful business strategy and provide the tools needed to
-                            understand that strategy such as SWOT, Competitor, Environmental, Five Forces, and Capabilities Analyses and Strategy Maps
-                        </p>
-                        <ul class="actions">
-                            <li><a href="Projects.html" class="button">Learn more</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
-                <div class="content">
-                    <div class="inner">
-                        <h2>Data Science Toolbox</h2>
-                        <p>
-                            In this course I was introduced to the main tools and ideas in the data scientist's toolbox.
-                            The course give me an overview of the data, questions, and tools that data analysts and data scientists work with.
-                            There were two components to this course. The first is a conceptual introduction to the ideas behind turning data into actionable knowledge.
-                            The second was a practical introduction to the tools that will be used in the program like version control, markdown, git, GitHub, R, and RStudio.
-                        </p>
-                        <ul class="actions">
-                            <li><a href="Projects.html" class="button">Learn more</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <a href="#" class="image"><img src="images/SnowFlake.png" alt="" data-position="center center" /></a>
-                <div class="content">
-                    <div class="inner">
-                        <h2>Snow Flake Data Warehousing</h2>
-                        <p>
-                            Completed Snow Flake Data Warehousing Workshop and gained hands on skills for creation of Databases,
-                            Creation of Tables and Schemas, Loading data into Tables, API connections to AWS Buckets, RBAC involved 
-                            in Snow Flake, SnowSql Queries for Data Manipulation & Data Definition 
-                        </p>
-                        <ul class="actions">
-                            <li><a href="Projects.html" class="button">Learn more</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <a href="#" class="image"><img src="images/pic07.jpg" alt="" data-position="25% 25%" /></a>
-                <div class="content">
-                    <div class="inner">
-                        <h2>Big Data</h2>
-                        <p>
-                            I gained an understanding of what insights big data can provide through hands-on experience with the tools and systems used by big
-                            data scientists and engineers. I was guided through the basics of using Hadoop with MapReduce, Spark, Pig and Hive.
-                            I learnt how one can perform predictive modeling and leverage graph analytics to model problems.
-                            I was able to ask the right questions about data, communicate effectively with data scientists, and do basic exploration of large,
-                            complex datasets
-                        </p>
-                        <ul class="actions">
-                            <li><a href="Projects.html" class="button">Learn more</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <a href="#" class="image"><img src="images/pic08.jpg" alt="" data-position="25% 25%" /></a>
-                <div class="content">
-                    <div class="inner">
-                        <h2>Machine Learning</h2>
-                        <p>
-                            This course provided a broad introduction to machine learning, datamining, and statistical pattern recognition.
-                            Topics included (i) Supervised learning (parametric/non-parametric algorithms, support vector machines, kernels, neural networks)
-                            (ii) Unsupervised learning (clustering, dimensionality reduction, recommender systems, deep learning)
-                            (iii) Best practices in machine learning (bias/variance theory; innovation process in machine learning and AI)
-                            The course also drew from numerous case studies and applications, so I learnt how to apply learning algorithms
-                            to building smart robots (perception, control), text understanding (web search, anti-spam), computer vision,
-                            medical informatics, audio, database mining, and other areas.
-                        </p>
-                        <ul class="actions">
-                            <li><a href="Projects.html" class="button">Learn more</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-             <section>
-                <a href="#" class="image"><img src="images/SQL.png" alt="" data-position="25% 25%" /></a>
-                <div class="content">
-                    <div class="inner">
-                        <h2>SQL</h2>
-                        <p>
-                            SQL HackerRank Certified 
-                        </p>
-                        <ul class="actions">
-                            <li><a href="Projects.html" class="button">Learn more</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-  <section>
-                <a href="#" class="image"><img src="images/Python.PNG" alt="" data-position="25% 25%" /></a>
-                <div class="content">
-                    <div class="inner">
-                        <h2>PYTHON</h2>
-                        <p>
-                            PYTHON HackerRank Certified 
-                        </p>
-                        <ul class="actions">
-                            <li><a href="Projects.html" class="button">Learn more</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-        </section>
-
-        <!-- Two -->
-        <section id="two" class="wrapper style3 fade-up">
-            <div class="inner">
-                <h2>Projects Worked</h2>
-                <p>I have worked in data analytics projects which involved data extraction, cleansing, wrangling, analysis and visualization </p>
-                <div class="features">
-                    <section>
-                        <span class="icon solid major fa-desktop"></span>
-                        <h3>McKinsey Trend Driver</h3>
-                        <p>
-                            A Quarterly Analysis carried out for McKinsey on their employee healthcare data. I did it during my tenure with
-                            IBM Watson Health. This is a very exhaustive and thourough analysis which yeilds various financial insights such as
-                            YoY%, QoQ%, MoM%, Forecast, KPI .,
-                        </p>
-                    </section>
-                    <section>
-                        <span class="icon solid major fa-cog"></span>
-                        <h3>Tools Involved</h3>
-                        <p>
-                            This analysis provides a very granular level of insights of employee
-                            claims data carried out by extracting data
-                            from Cognos repository and applying various Cognos and Spreadsheet (Excel) functions to derive results and curate a
-                            detailed presentation as the final deliverable
-                        </p>
-                    </section>
-                    <section>
-                        <span class="icon solid major fa-desktop"></span>
-                        <h3>Enterprise Quality Vault </h3>
-                        <p>
-                            It was a document managemet project based on Veeva platform carried out during my tenure with AstraZeneca
-                            Here I carried out Supplier data extraction, cleanse, and Analysis by applying various code book Filters in order to
-                            derive the final deliverable which is a Excel Flatfile
-                        </p>
-                    </section>
-                    <section>
-                        <span class="icon solid major fa-cog"></span>
-                        <h3>Tools Involved</h3>
-                        <p>
-                            Supplier Data was extracted from the SAP
-                            Data redundancy was eliminated and clustered using OpenRefine Then,
-                            Data Code Book was used for applying filters and curating the information needed
-                        </p>
-                    </section>
-                    <section>
-                        <span class="icon solid major fa-desktop"></span>
-                        <h3>Cyclistic Bike-Share Analysis </h3>
-                        <p>
-                            Cyclistic, a bike-share company in Chicago. For maximizing the number of annual memberships, the
-                            team wants to understand how casual riders and annual members use Cyclistic bikes Differ. This was carried out
-                            using public data set and results yeilded help make strategic business decisions using Quarterly generated data files
-                        </p>
-                    </section>
-                    <section>
-                        <span class="icon solid major fa-cog"></span>
-                        <h3>Tools Involved </h3>
-                        <p>
-                            The four data files in CSV format were loaded into "R" IDE (R Studio) and then binded into a single Data Frame
-                            Data Manipulation was carried out to eleminate any differences in data parameters
-                            A Summary of the analysis was created and finally Visualization of the Findings was created To answer the question 
-                            “In what ways do members and casual riders use Divvy bikes differently?”
-                        </p>
-                    </section>
-                    <section>
-                        <span class="icon solid major fa-desktop"></span>
-                        <h3>Employee Retention Analysis </h3>
-                        <p>
-                            Health Company data also which is at any given point of time, has around 4000 employees. However, every year, around 15% of its employees leave the company and need to be replaced with the talent pool available in the job market.<br />
-                            the management wants to understand what factors they should focus on, in order to curb attrition and how the employement numbers will impact them<br />
-
-                        </p>
-                    </section>
-<section>
-                        <span class="icon solid major fa-cog"></span>
-                        <h3>Tools Involved </h3>
-                        <p>
-                            The analysis was carried out by loading the Excel Flat file into Tableau and creating joins of different tables
-                            The Dashboard consists of four charts each gauging the employee retention factors consolidated togeather
-                        </p>
-                    </section>
-<section>
-                        <span class="icon solid major fa-desktop"></span>
-                        <h3>NLP for Sentiment  Analysis </h3>
-                        <p>
-                            Amazon customer reviews sample data was collected and cleansed Post which it was uploaded onto Google Colab and sentiment of each review was classified by the Model powered by LLM Pipeline () for sentiment analysis .<br />
-                            the reviews were classified as Positive or Negative based upon the sentiment by leveraging the llms trained on massive data<br />
-
-                        </p>
-                    </section>
-                    
-
- <section>
-                        <span class="icon solid major fa-cog"></span>
-                        <h3>Tools Involved </h3>
-                        <p>
-                           CHAT GPT for code generation and Google Colab for running the Model by loading the CSV flat file 
-                        </p>
-                    </section>
-
-
-                   </div>
-                <ul class="actions">
-                    <li><a href="Projects.html" class="button">Learn more</a></li>
-                </ul>
-            </div>
-        </section>
-    <!-- Three -->
-        <section id="three" class="wrapper style1 fade-up">
-            <div class="inner">
-                <h2>Get in touch</h2>
-                <p></p>
-                <div class="split style1">
-                    <section>
-                        <ul class="contact">
-                            <li>
-                                <h3>Address</h3>
-                                <span>
-                                    1632 F H Block 13th Main Road <br />
-                                    Anna Nagar, Chennai 600040<br />
-                                    India
-                                </span>
-                            </li>
-                            <li>
-                                <h3>Email</h3>
-                                <a href="#">dilips1100@yahoo.com</a>
-                            </li>
-                            <li>
-                                <h3>Phone</h3>
-                                <span>91-9500209647</span>
-                            </li>
-                            <li>
-                                <h3>Social</h3>
-                                <ul>
-                                    <li><a href="https://github.com/Dilip1100" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-                                    <li><a href="https://www.linkedin.com/in/dilipkumarsrinivasan-43a573a3/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </section>
-                </div>
-            </div>
-        </section>
-</div>
-      <!-- Footer -->
-    <footer id="footer" class="wrapper style1-alt">
-        <div class="inner">
-            <ul class="menu">
-                <li>&copy; Dilip</li>
-                <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-            </ul>
+    <section class="section" id="expertise">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Core expertise</p>
+          <h2>From ambiguous requirements to measurable outcomes</h2>
+          <p>My work combines business analysis, product ownership, data engineering and decision intelligence.</p>
         </div>
-    </footer>
+        <div class="grid three">
+          <article class="card">
+            <h3>Data analytics & BI</h3>
+            <p>Deep-dive analysis, reconciliation, root-cause analysis, KPI design and executive reporting with SQL, Excel, Power BI, Tableau and Cognos.</p>
+            <div class="skill-tags"><span class="tag">SQL</span><span class="tag">Power BI</span><span class="tag">Tableau</span><span class="tag">Excel VBA</span></div>
+          </article>
+          <article class="card">
+            <h3>Data platforms & engineering</h3>
+            <p>Scalable ETL/ELT pipelines, data modeling and integrations across Oracle, Snowflake, SAP HANA, Azure and AWS ecosystems.</p>
+            <div class="skill-tags"><span class="tag">Python</span><span class="tag">Oracle</span><span class="tag">Snowflake</span><span class="tag">Azure</span><span class="tag">AWS</span></div>
+          </article>
+          <article class="card">
+            <h3>Product & delivery leadership</h3>
+            <p>Roadmaps, requirements, backlog management, BRDs/FRDs, UAT and cross-functional delivery in Agile enterprise environments.</p>
+            <div class="skill-tags"><span class="tag">Product strategy</span><span class="tag">JIRA</span><span class="tag">Confluence</span><span class="tag">UAT</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+    <section class="section alt" id="domains">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Domain experience</p>
+          <h2>Enterprise context matters</h2>
+          <p>I bring domain fluency alongside technical delivery, enabling faster alignment with business and engineering stakeholders.</p>
+        </div>
+        <div class="grid three">
+          <article class="card"><h3>Financial crimes & AML</h3><p>Actimize AML data integration, Oracle UDM, transaction monitoring, alert quality and regulatory reporting.</p></article>
+          <article class="card"><h3>Capital markets</h3><p>Multi-asset trade lifecycle analytics across equities, fixed income, FX and derivatives, including reconciliation and STP exception analysis.</p></article>
+          <article class="card"><h3>Healthcare analytics</h3><p>Insurance, prescription and claims analysis, financial trend reporting and client-focused Cognos dashboards.</p></article>
+          <article class="card"><h3>Telecommunications</h3><p>Network operations analysis, enterprise pricing models, Oracle EBS integrations and analytics platform requirements.</p></article>
+          <article class="card"><h3>Life sciences & quality</h3><p>Enterprise Quality Vault, Veeva, SAP master data governance, material data quality and country-of-origin reporting.</p></article>
+          <article class="card"><h3>Automation</h3><p>RPA product lifecycle, AS-IS/TO-BE analysis, Blue Prism and UiPath implementations for network operations.</p></article>
+        </div>
+      </div>
+    </section>
 
+    <section class="section" id="featured-work">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Featured work</p>
+          <h2>Selected analytics engagements</h2>
+          <p>Representative projects spanning enterprise reporting, predictive modeling and customer analytics.</p>
+        </div>
+        <div class="grid three">
+          <article class="card project-card">
+            <p class="project-label">Enterprise healthcare analytics</p>
+            <h3>McKinsey Trend Driver</h3>
+            <p>Quarterly analysis of employee healthcare data covering YoY, QoQ and MoM trends, forecasting and financial KPIs.</p>
+            <div class="skill-tags"><span class="tag">Cognos</span><span class="tag">Excel</span><span class="tag">Forecasting</span></div>
+            <div class="card-actions"><a class="card-link" href="Projects.html#mckinsey">Read case study</a></div>
+          </article>
+          <article class="card project-card">
+            <p class="project-label">Data quality & governance</p>
+            <h3>Enterprise Quality Vault</h3>
+            <p>Supplier and SAP data extraction, cleansing, clustering and codebook-based filtering for Veeva quality operations.</p>
+            <div class="skill-tags"><span class="tag">Veeva</span><span class="tag">SAP</span><span class="tag">OpenRefine</span></div>
+            <div class="card-actions"><a class="card-link" href="Projects.html#quality-vault">Read case study</a></div>
+          </article>
+          <article class="card project-card">
+            <p class="project-label">Business intelligence</p>
+            <h3>Flight Insights</h3>
+            <p>Interactive aviation safety analysis spanning passenger counts, fatalities, survivors, operators, aircraft makes, years and geography.</p>
+            <div class="skill-tags"><span class="tag">Power BI</span><span class="tag">Data modeling</span><span class="tag">Geospatial BI</span></div>
+            <div class="card-actions"><a class="card-link" href="Projects.html#flight-insights">Read case study</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="capabilities">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Capability portfolio</p>
+          <h2>Applied learning across the modern data stack</h2>
+          <p>The original portfolio's learning and certification content is retained here in a more compact, accessible format.</p>
+        </div>
+        <div class="details-list">
+          <details><summary>Azure data concepts</summary><p>Working knowledge of IaaS, PaaS and SaaS; Azure Cosmos DB, Azure SQL, relational, non-relational and graph databases; Azure Synapse Analytics, Databricks, Data Factory and Data Lake.</p></details>
+          <details><summary>Google Data Analytics Professional Certificate</summary><p>Completed the eight-course sequence covering data sourcing, cleansing, transformation, analysis, visualization and recruiter-ready case-study communication.</p></details>
+          <details><summary>Customer analytics & business strategy</summary><p>Applied customer data collection and behavior-prediction concepts alongside SWOT, competitor, environmental, Five Forces, capability analysis and strategy maps.</p></details>
+          <details><summary>Data science toolbox & machine learning</summary><p>Hands-on foundations in version control, GitHub, R, RStudio, Python and the end-to-end data science process, with supervised and unsupervised learning, model evaluation and practical case studies.</p></details>
+          <details><summary>Snowflake, big data, SQL & Python</summary><p>Snowflake databases, schemas, loading, AWS storage integration, RBAC and SnowSQL; Hadoop, MapReduce, Spark, Pig and Hive; HackerRank-certified SQL and Python capabilities.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="credentials">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Credentials</p>
+          <h2>Professional certifications</h2>
+        </div>
+        <div class="grid three">
+          <article class="card"><h3>AWS</h3><p>AWS Certified Solutions Architect - Associate (SAA-C03) and Cloud Essentials.</p></article>
+          <article class="card"><h3>Microsoft Azure</h3><p>Microsoft Certified: Azure Data Fundamentals (DP-900) and Azure DevOps professional training.</p></article>
+          <article class="card"><h3>Data platforms</h3><p>Google Data Analytics Professional Certificate, Snowflake Data Warehouse certification and dbt credentials.</p></article>
+        </div>
+        <div class="hero-actions">
+          <a class="button enterprise-button" href="https://www.credly.com/users/dilip-kumar-s.f819e009/badges" rel="noopener noreferrer">View Credly badges</a>
+          <a class="button enterprise-button" href="https://credentials.getdbt.com/profile/dilips1100/wallet" rel="noopener noreferrer">View dbt wallet</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container contact-panel">
+        <div>
+          <p class="eyebrow">Get in touch</p>
+          <h2>Let’s turn data into a decision.</h2>
+          <p>Open to conversations about enterprise analytics, data products, business analysis and product management opportunities.</p>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:dilip1100@gmail.com">dilip1100@gmail.com</a>
+          <a href="https://www.linkedin.com/in/dilip-srinivasan-43a573a3" rel="noopener noreferrer">LinkedIn profile</a>
+          <a href="https://github.com/Dilip1100?tab=repositories" rel="noopener noreferrer">GitHub repositories</a>
+          <a href="https://medium.com/@dilip1100" rel="noopener noreferrer">Medium articles</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <span>© <span data-year></span> Dilip Kumar. All rights reserved.</span>
+      <span>Chennai, India · Built for clarity, accessibility and performance.</span>
+    </div>
+  </footer>
+  <script src="assets/js/enterprise.js" defer></script>
 </body>
 </html>
