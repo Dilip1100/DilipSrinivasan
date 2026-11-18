@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LLM &amp; Gradio Projects | Dilip Kumar</title>
+  <meta name="description" content="Explore Dilip Kumar’s LLM and Gradio applications: a natural-language database query app, Gemini airline assistant, AWS AI BI demos and ongoing RAG learning.">
+  <meta name="theme-color" content="#5e42a6">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="LLM &amp; Gradio Projects | Dilip Kumar">
+  <meta property="og:description" content="From business questions to AI applications: Gradio interfaces, database assistants, tool calling and cloud analytics.">
+  <meta property="og:image" content="https://dilip1100.github.io/DilipSrinivasan/images/og.png">
+  <meta property="og:url" content="https://dilip1100.github.io/DilipSrinivasan/AI.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://dilip1100.github.io/DilipSrinivasan/AI.html">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/enterprise.css">
+</head>
+<body class="enterprise">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html" aria-label="Dilip Kumar home"><span class="brand-mark" aria-hidden="true">DK</span><span>Dilip Kumar</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="Open navigation">☰</button>
+      <nav class="site-nav" id="site-navigation" aria-label="Primary navigation">
+        <a href="index.html">Home</a><a href="experience.html">Experience</a><a href="Projects.html">Projects</a><a href="AI.html" aria-current="page">AI &amp; LLMs</a><a href="Dashboards.html">Dashboards</a><a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Applied AI · Recent work</p>
+        <h1>LLMs, Gradio &amp; business data</h1>
+        <p class="lede">I build conversational interfaces that connect language models with business data. My recent work spans database query applications, a tool-enabled airline assistant and cloud-hosted AI BI demos.</p>
+        <div class="skill-tags"><span class="tag">Python</span><span class="tag">Gradio</span><span class="tag">OpenAI</span><span class="tag">Gemini</span><span class="tag">MongoDB</span><span class="tag">SQLite</span><span class="tag">AWS</span></div>
+        <div class="hero-actions"><a class="button enterprise-button primary" href="#applications">Explore the applications</a><a class="button enterprise-button" href="#learning">LLM &amp; RAG learning</a></div>
+      </div>
+    </section>
+
+    <section class="section" id="applications">
+      <div class="container">
+        <div class="section-head"><p class="eyebrow">Application portfolio</p><h2>From a question to a useful answer</h2><p>Each project connects an interface, a language model and a data source around a specific task.</p></div>
+        <div class="grid two">
+          <article class="card ai-project" id="database-assistant">
+            <p class="project-label">Database application · Project overview</p>
+            <h3>Natural-language database query app</h3>
+            <p><strong>The problem:</strong> Business users need a more accessible way to ask questions about data without starting with database query syntax.</p>
+            <p><strong>What I built:</strong> A Python application with a Gradio interface, OpenAI-powered natural-language query generation and connectivity to a company database using MongoDB.</p>
+            <p><strong>Focus:</strong> Connecting the user’s question, model interaction and database access in one interactive application.</p>
+            <div class="skill-tags"><span class="tag">Gradio</span><span class="tag">OpenAI API</span><span class="tag">Python</span><span class="tag">MongoDB</span><span class="tag">Natural-language queries</span></div>
+            <p class="app-note">Project overview only. Company data, connection details and a public demo are not shared in this portfolio.</p>
+          </article>
+          <article class="card ai-project" id="airline-assistant">
+            <p class="project-label">Public source · Local prototype</p>
+            <h3>ARK Airlines assistant</h3>
+            <p><strong>The problem:</strong> Answer questions about available routes and departure times using the flight records behind the application.</p>
+            <p><strong>What I built:</strong> A Gemini-powered Gradio chat interface with Python lookup tools and a SQLite database seeded with ten sample flights.</p>
+            <p><strong>Implementation:</strong> Route-specific and departure-city lookups use parameterized SQL. The chat carries conversation history and includes responses for missing flights and API errors.</p>
+            <div class="skill-tags"><span class="tag">Gradio ChatInterface</span><span class="tag">Gemini</span><span class="tag">SQLite</span><span class="tag">Tool calling</span></div>
+            <p class="app-note">Uses sample schedules. This is a local prototype, not a booking service. Running the code requires a Gemini API key and an available model.</p>
+            <div class="card-actions"><a class="button enterprise-button primary" href="https://github.com/Dilip1100/GradioUI1100" rel="noopener noreferrer">View source &amp; setup</a></div>
+          </article>
+        </div>
+        <div class="ai-flow">
+          <h3>Inside the airline assistant</h3>
+          <p>A simplified view of the lookup path implemented in the source project.</p>
+          <ol class="flow-steps">
+            <li><span class="flow-number" aria-hidden="true">01</span><strong>Ask in Gradio</strong><span>Enter a route or departure-city question.</span></li>
+            <li><span class="flow-number" aria-hidden="true">02</span><strong>Select a lookup</strong><span>Gemini can call the registered Python tools.</span></li>
+            <li><span class="flow-number" aria-hidden="true">03</span><strong>Query SQLite</strong><span>Retrieve matching sample flight records.</span></li>
+            <li><span class="flow-number" aria-hidden="true">04</span><strong>Return an answer</strong><span>Present the result in the conversation.</span></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="ai-bi">
+      <div class="container">
+        <div class="section-head"><p class="eyebrow">Gateway Marketing · Hosted demos</p><h2>AI-assisted business intelligence on AWS</h2><p>Four industry demos combine interactive Vizro / Plotly analytics with an OpenAI adviser for automotive, steel, real estate and medical businesses.</p></div>
+        <div class="grid two">
+          <article class="card">
+            <h3>Analytics with conversational context</h3>
+            <p>The applications bring sales and revenue charts, filter-responsive KPIs, collections, a baseline forecast and revenue treemaps into one business view. The adviser receives summary figures and the user’s question to explain performance.</p>
+            <p>AWS CloudFront and EC2 host the applications, S3 supplies demonstration data, and Cognito provides sign-in.</p>
+            <div class="skill-tags"><span class="tag">OpenAI API</span><span class="tag">Vizro / Plotly</span><span class="tag">CloudFront</span><span class="tag">EC2</span><span class="tag">Cognito</span></div>
+            <div class="card-actions"><a class="button enterprise-button primary" href="Dashboards.html#aws-apps">Explore all four demos</a><a class="card-link" href="Projects.html#gateway-ai-bi">Read the case study</a></div>
+          </article>
+          <figure class="card app-preview">
+            <a href="Dashboards.html#aws-apps"><img class="app-shot" src="https://dilip1100.github.io/AI-BusinessIntelligenceApp/assets/current-automotive-dashboard.jpg" width="1024" height="461" loading="lazy" alt="Gateway automotive AI BI demo showing interactive business KPIs and charts"></a>
+            <figcaption>Actual automotive app screenshot. The suite uses 70,000 synthetic records across four apps. Demo sign-in is required.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="learning">
+      <div class="container">
+        <div class="section-head"><p class="eyebrow">Ongoing learning &amp; experimentation</p><h2>Building deeper LLM engineering skills</h2><p>Alongside application development, I am studying how retrieval, evaluation and model lifecycle practices support more reliable AI products.</p></div>
+        <div class="grid two">
+          <article class="card">
+            <p class="project-label">Coursework · In progress</p><h3>LLM engineering</h3>
+            <p>Following Ed Donner’s LLM Engineering course, with continued learning in RAG, embeddings, vector databases, model fine-tuning and deployment concepts.</p>
+            <p>Practical model and API exposure includes OpenAI, Gemini, Llama and GPT-OSS, with experimentation through OpenRouter and Groq. Gradio provides an interface for turning these integrations into interactive applications.</p>
+            <div class="skill-tags"><span class="tag">Prompt engineering</span><span class="tag">OpenRouter</span><span class="tag">Groq</span><span class="tag">Embeddings</span></div>
+            <div class="card-actions"><a class="card-link" href="https://github.com/Dilip1100/llm_engineering" rel="noopener noreferrer">Browse my course repository fork</a></div>
+            <p class="app-note">The linked repository is a fork of Ed Donner’s course materials; it includes upstream examples and community contributions.</p>
+          </article>
+          <article class="card">
+            <p class="project-label">Study &amp; learning · In progress</p><h3>Databricks RAG workflow</h3>
+            <p>Studying product and documentation assistants that retrieve relevant source material before generating an answer.</p>
+            <ul><li>Chunking, embeddings and similarity retrieval.</li><li>Databricks AI Search and Unity Catalog concepts.</li><li>Grounded prompts and source-aware answers.</li><li>Retrieval quality, faithfulness, relevance and MLflow evaluation concepts.</li><li>Model registration, serving and feedback workflows.</li></ul>
+            <p class="app-note">Study focus: architecture and evaluation concepts, supported by an illustrated learning guide and coursework.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-panel">
+        <div><p class="eyebrow">Data &amp; AI product delivery</p><h2>Start with the business question.</h2><p>I bring enterprise analysis, SQL, Python and product delivery experience to practical AI application development.</p></div>
+        <div class="contact-links"><a href="mailto:dilip1100@gmail.com">Discuss an AI or data project</a><a href="Projects.html">Explore the full project portfolio</a><a href="experience.html">View professional experience</a></div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container footer-wrap"><span>© <span data-year></span> Dilip Kumar.</span><span>LLMs · Gradio · Data · Product</span></div></footer>
+  <script src="assets/js/enterprise.js" defer></script>
+</body>
+</html>
