@@ -790,3 +790,13 @@ object {
     transition-duration: 0.01ms !important;
   }
 }
+
+
+/* AWS AI BI portfolio showcase */
+.app-preview { margin: 0; }
+.app-shot { display: block; width: 100%; height: auto; aspect-ratio: 1024 / 461; object-fit: contain; border: 1px solid var(--line); border-radius: .75rem; background: #fff; }
+.app-image-link { display: block; margin-bottom: 1.4rem; border: 0; }
+.app-figure { margin: 2.5rem 0 0; }
+.app-figure .app-shot { max-width: 1024px; margin-inline: auto; }
+.app-preview figcaption, .app-figure figcaption, .app-note { margin-top: 1rem; color: var(--muted); font-size: .85rem; line-height: 1.65; }
+.app-card .card-actions { padding-top: 1rem; }
